@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="32dp"
+    app:contentPadding="8dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_loginId"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:text="LoginId :"
+                android:textAppearance="@style/TextField_Bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_loginId"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="jvhjv"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/text_loginId"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_loginId"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+                android:text="jskfhk"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                app:layout_constraintStart_toEndOf="@+id/text_name"
+
+                />
+        </LinearLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_closing_date"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Closing Date :"
+
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"/>
+
+            <TextView
+                android:id="@+id/tv_closing_date"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+                android:text="jskfhk"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:layout_constraintStart_toEndOf="@+id/text_closing_date"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amount"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_amount"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Amount :"
+
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3"/>
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+                android:text="jskfhk"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                app:layout_constraintStart_toEndOf="@+id/text_amount"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/text_closing_date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_bv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Leg :"
+
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4"/>
+
+            <TextView
+                android:id="@+id/tv_bv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                app:layout_constraintStart_toEndOf="@+id/text_bv"
+
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

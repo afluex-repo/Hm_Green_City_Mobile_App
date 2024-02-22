@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="32dp"
+    app:contentPadding="8dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_tds"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+
+            android:text="TDS Charge :"
+            android:textAppearance="@style/TextField_Bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_tds"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="jvhjv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_narration"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/view00"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tds"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_narration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+
+            android:text="Narration :"
+            android:textAppearance="@style/TextField_Bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_narration"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="jvhjv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_narration"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_narration"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_cr_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="CrAmount :"
+
+            android:textAppearance="@style/TextField_Bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+        <TextView
+            android:id="@+id/cr_amount"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="jskfhk"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintStart_toEndOf="@+id/text_cr_amount"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/cr_amount"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_dr_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="DrAmount :"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:textAppearance="@style/TextField_Bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"/>
+
+        <TextView
+            android:id="@+id/dr_amount"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="jskfhk"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintStart_toEndOf="@+id/text_dr_amount"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/dr_amount"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_transaction_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+
+            android:text="Transaction No :"
+            android:textAppearance="@style/TextField_Bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_transaction_no"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="jvhjv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/text_narration"
+
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/view0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_no"/>
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <TextView
+             android:id="@+id/text_date"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="Transaction Date :"
+             android:textColor="@color/white"
+             android:background="@drawable/shape_gradient_dashboard"
+             android:textSize="14sp"
+             android:layout_gravity="center"
+             android:gravity="center"
+
+             android:textAppearance="@style/TextField_Bold"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/view4"/>
+
+         <TextView
+             android:id="@+id/tv_date"
+             android:layout_width="0dp"
+             android:layout_weight="2"
+             android:layout_height="wrap_content"
+             android:textSize="13sp"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_marginStart="8dp"
+             app:layout_constraintTop_toBottomOf="@+id/view4"
+             app:layout_constraintStart_toEndOf="@+id/text_date"
+
+             />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CACAF8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_balance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_gradient_dashboard"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Balance :"
+
+            android:textAppearance="@style/TextField_Bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3"/>
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="jskfhk"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintStart_toEndOf="@+id/text_balance"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0080FF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF8C00</color>
+    <color name="themeblack">#1b1d1f</color>
+    <color name="themegrey">#777778</color>
+    <color name="themdarkblack">#2a2c2d</color>
+    <color name="themgrey">#00a651</color>
+    <color name="background">#44000000</color>
+    <color name="bg_top">#cccccc</color>
+    <color name="mainheading">#7a8fa6</color>
+    <color name="subheading">#393f46</color>
+    <color name="readmoreheading">#ab7429</color>
+    <color name="starratingtext">#6fc649</color>
+    <color name="error_bg">#f8f7f6</color>
+
+    <color name="pendingcolor">#FF8C00</color>
+    <color name="editTextLine">#D3D1D2</color>
+    <color name="colorVeg">#008301</color>
+    <color name="colorVegTrans">#5a008301</color>
+    <color name="colorNonVeg">#a92c26</color>
+    <color name="colorNonVegTrans">#798e4522</color>
+    <color name="textcolor">#010723</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="colorBlack">#000000</color>
+    <color name="lightbalck">#252424</color>
+    <color name="colorBlackTransparent">#FFF0F0F0</color>
+    <color name="bg_home">#f4f4f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="texts">#f34129</color>
+    <color name="colorWhiteTransparent">#D9ffffff</color>
+    <color name="Blue">#49556e</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="google_login">#DB4437</color>
+
+    <color name="green">#349847</color>
+    <color name="green_fade">#BADCC0</color>
+
+
+    <color name="color_flights">@android:color/holo_red_light</color>
+    <color name="color_add_money">#5fd472</color>
+    <color name="yellow">#ffd700</color>
+    <color name="viewBg">#f1f5f8</color>
+
+    <color name="pink">#EC296B</color>
+
+
+    <color name="black_trans">#99000000 </color>
+    <color name="btn_txt_color">#ffffff</color>
+
+    <color name="seafoam">#ffc6f9e5</color>
+    <color name="chartreuse">#ffb6e9b5</color>
+    <color name="emerald">#ffa6d9b5</color>
+    <color name="bluegrass">#ff96c9b5</color>
+    <color name="turquoise">#ff86b9b5</color>
+    <color name="slate">#ff76a9b5</color>
+    <color name="grey">#808080</color>
+    <color name="ecart_grey">#999999</color>
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="colorUserText">#949fab</color>
+    <color name="eCommerceBtnBg">#f0484f</color>
+    <color name="eCommercePriceColor">#333366</color>
+    <color name="eCommerceTitleColor">#535353</color>
+    <color name="tab_checked">@color/colorWhite</color>
+    <color name="tab_unchecked">@color/grey</color>
+    <color name="button_color">#ffff9f00</color>
+    <color name="white">#ffffff</color>
+
+    <color name="silver">#D3D3D3</color>
+    <color name="colorPrimary_transparent">#4080cc</color>
+    <color name="darkblue">#00008B</color>
+
+    <color name="tab_bg">#0f9d58</color>
+    <color name="tab_inactive">#666666</color>
+
+    <color name="title">#fffb641b</color>
+    <color name="white_trans">#99ffffff </color>
+    <color name="themecolor">#FDD305</color>
+    <color name="line_color">#d8a968</color>
+    <color name="view_color">#E1E1E1</color>
+    <color name="red">#FF0000</color>
+
+    <color name="edit_hint">#808080</color>
+    <color name="lighttext">#868c90</color>
+    <color name="background_color">#f4f3f3</color>
+
+    <!-- USing for Heading text and editext hint color-->
+
+    <color name="headingcolor">#020202</color>
+    <color name="edittextcolor">#555</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="Wheat">#5dff40</color>
+    <color name="back">#DF82A2</color>
+    <color name="Wheat2">#ffcc40</color>
+    <color name="back2">#075056</color>
+    <color name="buttonclor">#333050</color>
+
+
+    <color name="colorGray">#f4f4f4</color>
+    <color name="style_color_primary">#eda900</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+    <color name="fab_color_pressed">#eda900 </color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="paint_color">#dddddd</color>
+    <color name="them_yello">#eda900</color>
+
+    <color name="dailog">#44000000</color>
+    <color name="text_color">#c55c35</color>
+    <color name="bg_top_color">#edb262</color>
+    <color name="seprator">#fabc6b</color>
+    <color name="internet_colorc">#30343b</color>
+    <color name="line_search">#797979</color>
+    <color name="search_text">#797979</color>
+    <color name="search_text1">#535252</color>
+    <color name="profile_line">#797979</color>
+    <color name="home_tiltlecode">#656565</color>
+
+    <array name="colors">
+        <item name="RED">@color/red</item>
+        <item name="GREEN">@color/green</item>
+        <item name="YELLOW">@color/yellow</item>
+        <item name="BLUE_DARK">@color/colorPrimary</item>
+        <item name="BLACK">@color/colorBlack</item>
+        <item name="BLUE">@color/Blue</item>
+        <item name="GREY">@color/grey</item>
+        <item name="BLACK_LIGHT">@color/eCommerceTitleColor</item>
+        <item name="RED_DARK">@color/eCommerceBtnBg</item>
+        <item name="SEAFOAM">@color/seafoam</item>
+    </array>
+
+</resources>

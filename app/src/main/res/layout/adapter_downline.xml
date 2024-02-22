@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_loginId"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="LoginId :"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_loginId"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:text="jvhjv"
+
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/text_loginId"
+
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_loginId"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextField_Bold"
+
+                android:text=" Name :"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1" />
+            <TextView
+                android:id="@+id/tv_name"
+
+
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp"
+                android:layout_marginStart="8dp"
+
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/text_name"
+
+                app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/text_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_Leg"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Leg :"
+                android:textAppearance="@style/TextField_Bold"
+
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/tv_leg"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/text_Leg"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_leg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_joining_date"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Joining Date :"
+                android:textAppearance="@style/TextField_Bold"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <TextView
+                android:id="@+id/tv_joining_date"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/text_joining_date"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_joining_date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_package"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Package :"
+                android:textAppearance="@style/TextField_Bold"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/tv_package"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/text_package"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/text_package"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_activation_date"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Activation Date :"
+                android:textAppearance="@style/TextField_Bold"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <TextView
+                android:id="@+id/tv_activation_date"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/text_activation_date"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/text_activation_date"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_mobile_number"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Mobile Number :"
+                android:textAppearance="@style/TextField_Bold"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+            <TextView
+                android:id="@+id/tv_mobile_number"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+
+                app:layout_constraintStart_toEndOf="@+id/text_mobile_number"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/text_mobile_number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_Status"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Status :"
+                android:textAppearance="@style/TextField_Bold"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="djvkvjf"
+                android:textColor="@color/lightbalck"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/text_Status"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
