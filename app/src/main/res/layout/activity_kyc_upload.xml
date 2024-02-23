@@ -443,7 +443,7 @@
             android:layout_height="35dp"
             android:layout_marginTop="5dp"
             android:layout_marginStart="32dp"
-            android:background="@drawable/shape_gradient_dashboard"
+            android:background="@color/green"
             android:text="Upload KYC"
             android:layout_gravity="center"
             android:textAppearance="@style/TextFieldBold"

@@ -237,12 +237,12 @@ public class KYCUpload extends BaseActivity {
                     if(lstKycDocuments.getAdharStatus().equals("Not Uploaded")){
 
                     }
+                    Log.e("d;smdkld",lstKycDocuments.getAdharImage());
 
-
-                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getAdharImage()).into(binding.imagAdhar);
-                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getPanImage()).into(binding.imagPan);
-                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getDocumentImage()).into(binding.imagDocument);
-                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getAdharBacksideImage()).into(binding.imagAdharBack);
+                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getAdharImage().substring(1)) .placeholder(R.drawable.box_bg).into(binding.imagAdhar);
+                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getPanImage().substring(1)).placeholder(R.drawable.box_bg).into(binding.imagPan);
+                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getDocumentImage().substring(1)).placeholder(R.drawable.box_bg).into(binding.imagDocument);
+                    Picasso.with(KYCUpload.this).load(BuildConfig.BASE_URL + lstKycDocuments.getAdharBacksideImage().substring(1)).placeholder(R.drawable.box_bg).into(binding.imagAdharBack);
 
 
                 }

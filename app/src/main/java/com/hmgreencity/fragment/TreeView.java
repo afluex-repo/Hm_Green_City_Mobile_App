@@ -105,7 +105,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
         go_btn = view.findViewById(R.id.go_btn);
         moveup = view.findViewById(R.id.moveup);
 
-        btn_downline_rank=view.findViewById(R.id.btn_downline_rank);
+        btn_downline_rank = view.findViewById(R.id.btn_downline_rank);
 
         tree_l_one_photo = view.findViewById(R.id.tree_l_one_photo);
         tree_l_two_a_photo = view.findViewById(R.id.tree_l_two_a_photo);
@@ -337,14 +337,13 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
     private void execute(TextView view, String loginId) {
         Bundle param = new Bundle();
 
-        Log.e("LoginId1234567574",loginId);
-        Log.e("LoginId1234567574",""+loginId.equalsIgnoreCase(""));
+        Log.e("LoginId1234567574", loginId);
+        Log.e("LoginId1234567574", "" + loginId.equalsIgnoreCase(""));
         if (loginId.equalsIgnoreCase("")) {
             if (view == tree_l_one_customerid) {
             } else if (view == tree_l_two_a_customerid) {
                 loginId = tree_l_one_customerid.getText().toString();
-            }
-            else if (view == tree_l_two_b_customerid) {
+            } else if (view == tree_l_two_b_customerid) {
                 loginId = tree_l_one_customerid.getText().toString();
             } else if (view == tree_l_three_a_customerid) {
                 loginId = tree_l_two_a_customerid.getText().toString();
@@ -381,17 +380,13 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 
             }
 
-            if(PreferencesManager.getInstance(getActivity()).getRank().equals("Star")){
+            if (PreferencesManager.getInstance(getActivity()).getRank().equals("Star")) {
                 ((ContainerActivity) context).ReplaceFragment(new SignUpFragment(), "Register");
-            }else{
+            } else {
                 Toast.makeText(getActivity(), "Your Rank is not Eligible for Downline Registration", Toast.LENGTH_LONG).show();
             }
 
-        }
-
-
-
-        else {
+        } else {
             ChooseFreomTreeDialog(loginId, context);
         }
     }
@@ -460,6 +455,13 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
         TextView inactive_total = BusinessDialog.findViewById(R.id.inactive_total);
         TextView totalmembers_total = BusinessDialog.findViewById(R.id.totalmembers_total);
         TextView totalbuis_total = BusinessDialog.findViewById(R.id.totalbuis_total);
+        TextView tv_topup_amt = BusinessDialog.findViewById(R.id.tv_topup_amt);
+        TextView tv_activation_date = BusinessDialog.findViewById(R.id.tv_activation_date);
+        TextView tv_sponsor_details = BusinessDialog.findViewById(R.id.tv_sponsor_details);
+        TextView tv_last_new_buisness_amount = BusinessDialog.findViewById(R.id.tv_last_new_buisness_amount);
+        TextView tv_last_new_buisness_topup_date = BusinessDialog.findViewById(R.id.tv_last_new_buisness_topup_date);
+        TextView tv_yellow_date = BusinessDialog.findViewById(R.id.tv_yellow_date);
+
 
         for (int i = 0; i < tree_view_arr.size(); i++) {
             if (tree_view_arr.get(i).getLoginId().equalsIgnoreCase(loginId)) {
@@ -471,7 +473,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 
                 active_left.setText(tree_view_arr.get(i).getActiveLeft());
                 inactive_left.setText(tree_view_arr.get(i).getInactiveLeft());
-                totalmembers_left.setText(String.valueOf(Integer.parseInt(tree_view_arr.get(i).getActiveLeft()) + Integer.parseInt(tree_view_arr.get(i).getInactiveLeft())+ Integer.parseInt(tree_view_arr.get(i).getHoldLeft())));
+                totalmembers_left.setText(String.valueOf(Integer.parseInt(tree_view_arr.get(i).getActiveLeft()) + Integer.parseInt(tree_view_arr.get(i).getInactiveLeft()) + Integer.parseInt(tree_view_arr.get(i).getHoldLeft())));
                 totalbuis_left.setText(tree_view_arr.get(i).getBusinessLeft());
 
                 active_right.setText(tree_view_arr.get(i).getActiveRight());
@@ -483,25 +485,56 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                Log.e("FThgh",tree_view_arr.get(i).getHoldLeft());
                 tv_hold_left.setText(tree_view_arr.get(i).getHoldLeft());
                 hold_right.setText(tree_view_arr.get(i).getHoldRight());
+                if (tree_view_arr.get(i).getYellowDate() != null) {
+                    tv_yellow_date.setText(tree_view_arr.get(i).getYellowDate());
+                } else {
+                    tv_yellow_date.setText("N/A");
+                }
+
+                if (tree_view_arr.get(i).getTopUpAmount() != null) {
+                    tv_topup_amt.setText(tree_view_arr.get(i).getTopUpAmount());
+                } else {
+                    tv_topup_amt.setText("N/A");
+                }
+                if (tree_view_arr.get(i).getActivationDate() != null) {
+                    tv_activation_date.setText(tree_view_arr.get(i).getActivationDate());
+                } else {
+                    tv_activation_date.setText("N/A");
+                }
+                if (tree_view_arr.get(i).getSponsorDetails() != null) {
+                    tv_sponsor_details.setText(tree_view_arr.get(i).getSponsorDetails());
+                } else {
+                    tv_sponsor_details.setText("N/A");
+                }
+                if (tree_view_arr.get(i).getLastNewBuisnessAmount() != null) {
+                    tv_last_new_buisness_amount.setText(tree_view_arr.get(i).getLastNewBuisnessAmount());
+                } else {
+                    tv_last_new_buisness_amount.setText("N/A");
+                }
+                if (tree_view_arr.get(i).getLastNewBuisnessTopUpDate() != null) {
+                    tv_last_new_buisness_topup_date.setText(tree_view_arr.get(i).getLastNewBuisnessTopUpDate());
+                } else {
+                    tv_last_new_buisness_topup_date.setText("N/A");
+                }
 
                 active_total.setText(String.valueOf(Integer.parseInt(tree_view_arr.get(i).getActiveRight()) + Integer.parseInt(tree_view_arr.get(i).getActiveLeft())));
-                if(tree_view_arr.get(i).getHoldLeft()!=null && tree_view_arr.get(i).getHoldRight()!=null){
+                if (tree_view_arr.get(i).getHoldLeft() != null && tree_view_arr.get(i).getHoldRight() != null) {
                     hold_total.setText(String.valueOf(Integer.parseInt(tree_view_arr.get(i).getHoldLeft()) + Integer.parseInt(tree_view_arr.get(i).getHoldRight())));
                 }
 
                 inactive_total.setText(String.valueOf(Integer.parseInt(tree_view_arr.get(i).getInactiveRight()) + Integer.parseInt(tree_view_arr.get(i).getInactiveLeft())));
                 totalmembers_total.setText(String.valueOf(Integer.parseInt(totalmembers_left.getText().toString())
                         + Integer.parseInt(totalmembers_right.getText().toString())));
-                Double left=Double.parseDouble(tree_view_arr.get(i).getBusinessLeft());
-                Double right=Double.valueOf(tree_view_arr.get(i).getBusinessRight());
-                Double add=left+right;
+                Double left = Double.parseDouble(tree_view_arr.get(i).getBusinessLeft());
+                Double right = Double.valueOf(tree_view_arr.get(i).getBusinessRight());
+                Double add = left + right;
                 DecimalFormat decimalFormatter = new DecimalFormat("############.##");
                 decimalFormatter.setMinimumFractionDigits(2);
                 decimalFormatter.setMaximumFractionDigits(3);
                 totalbuis_total.setText(decimalFormatter.format(Double.parseDouble(String.valueOf(add))));
-                Log.e("GHFghcg",""+add);
-                Log.e("GHFghcg",""+left);
-                Log.e("GHFghcg",""+right);
+                Log.e("GHFghcg", "" + add);
+                Log.e("GHFghcg", "" + left);
+                Log.e("GHFghcg", "" + right);
 //                totalbuis_total.setText(String.format("%.2f",String.valueOf
 //                        ((Double.parseDouble(tree_view_arr.get(i).getBusinessLeft()) + Double.parseDouble(tree_view_arr.get(i).getBusinessRight())))));
                 break;
@@ -519,7 +552,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
         object.addProperty("loginid", loginId);
         object.addProperty("Fk_headId", PreferencesManager.getInstance(context).getUserId());
 
-        Log.e("jhjiji","LLL::"+loginId+"HEAD"+PreferencesManager.getInstance(context).getUserId());
+        Log.e("jhjiji", "LLL::" + loginId + "HEAD" + PreferencesManager.getInstance(context).getUserId());
 //        LoggerUtil.logItem(object);
 
         Call<ResponseTreeView> call = apiServices.getTreeView(object);
@@ -534,7 +567,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                         main_lo.setVisibility(View.VISIBLE);
                         removepreviousData();
                         tree_view_arr = response.body().getGetGenelogy();
-                        Log.e("jhghjfuv",response.body().toString());
+                        Log.e("jhghjfuv", response.body().toString());
 
                         try {
                             if ((tree_view_arr.size() != 0)) {
@@ -555,7 +588,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_one_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                             //CASE 2
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("2") &&
                                                 tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")) {
@@ -570,7 +603,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_two_a_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("2") &&
                                                 tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")) {
                                             twoR = tree_view_arr.get(j).getFkUserId();
@@ -584,7 +617,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_two_b_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                             //CASE 3
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") &&
                                                 tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -600,7 +633,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_a_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && twoL.equals(tree_view_arr.get(j).getFkParentId())) {
                                             three2 = tree_view_arr.get(j).getFkUserId();
@@ -614,7 +647,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_b_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
                                                 && twoR.equals(tree_view_arr.get(j).getFkParentId())) {
                                             three3 = tree_view_arr.get(j).getFkUserId();
@@ -628,7 +661,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_c_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && twoR.equals(tree_view_arr.get(j).getFkParentId())) {
                                             three4 = tree_view_arr.get(j).getFkUserId();
@@ -642,7 +675,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_d_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         }
                                         // ######### Case 4
                                         else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -659,7 +692,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_one_photo);
 
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && three1.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_two_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -672,7 +705,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_two_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
                                                 && three2.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_three_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -685,7 +718,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_three_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && three2.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_four_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -698,7 +731,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_four_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
                                                 && three3.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_five_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -711,7 +744,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_five_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && three3.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_six_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -724,7 +757,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_six_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
                                                 && three4.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_seven_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -737,7 +770,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_seven_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
                                                 && three4.equals(tree_view_arr.get(j).getFkParentId())) {
                                             tree_l_four_eight_customerid.setText(tree_view_arr.get(j).getLoginId());
@@ -750,7 +783,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                             }
                                             Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_eight_photo);
-                                            Log.e("LOFGFGHF","LOGIN"+tree_view_arr.get(j).getLoginId()+"::::"+tree_view_arr.get(j).getImageURL());
+                                            Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         }
                                     } catch (Error r) {
                                         r.printStackTrace();
@@ -906,10 +939,10 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                             e.printStackTrace();
                         }
                     }
-                }else {
-                    Log.e("KMJKNJN",response.body().getStatus());
-                    Log.e("KMJKNJN",response.body().getMessage());
-                    Log.e("KMJKNJN",response.toString());
+                } else {
+                    Log.e("KMJKNJN", response.body().getStatus());
+                    Log.e("KMJKNJN", response.body().getMessage());
+                    Log.e("KMJKNJN", response.toString());
                 }
             }
 

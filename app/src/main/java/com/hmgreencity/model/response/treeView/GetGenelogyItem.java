@@ -62,6 +62,20 @@ public class GetGenelogyItem {
     @SerializedName("HoldRight")
     private String HoldRight;
 
+ @SerializedName("YellowDate")
+    private String YellowDate;
+@SerializedName("Top Up Amount")
+    private String TopUpAmount;
+@SerializedName("Activation Date")
+    private String ActivationDate;
+@SerializedName("Sponsor Details")
+    private String SponsorDetails;
+@SerializedName("Last New Buisness Amount")
+    private String LastNewBuisnessAmount;
+@SerializedName("Last New Buisness Top Up Date")
+    private String LastNewBuisnessTopUpDate;
+
+
 
     public String getLoginId(){
         return loginId;
@@ -221,5 +235,46 @@ public class GetGenelogyItem {
 
     public void setHoldRight(String holdRight) {
         HoldRight = holdRight;
+    }
+
+    public String getYellowDate() {
+        return YellowDate;
+    }
+
+    public void setYellowDate(String yellowDate) {
+        YellowDate = yellowDate;
+    }
+
+
+    public String getTopUpAmount() {
+        return TopUpAmount;
+    }
+
+    public void setTopUpAmount(String topUpAmount) {
+        TopUpAmount = topUpAmount;
+    }
+
+    public String getSponsorDetails() {
+        return SponsorDetails;
+    }
+
+    public void setSponsorDetails(String sponsorDetails) {
+        SponsorDetails = sponsorDetails;
+    }
+
+    public String getLastNewBuisnessAmount() {
+        return LastNewBuisnessAmount;
+    }
+
+    public void setLastNewBuisnessAmount(String lastNewBuisnessAmount) {
+        LastNewBuisnessAmount = lastNewBuisnessAmount;
+    }
+
+    public String getLastNewBuisnessTopUpDate() {
+        return LastNewBuisnessTopUpDate;
+    }
+
+    public void setLastNewBuisnessTopUpDate(String lastNewBuisnessTopUpDate) {
+        LastNewBuisnessTopUpDate = lastNewBuisnessTopUpDate;
     }
 }

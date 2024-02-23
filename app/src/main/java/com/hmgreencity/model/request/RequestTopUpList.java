@@ -46,4 +46,23 @@ public class RequestTopUpList {
         return ToDate;
     }
 
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setFromDate(String fromDate) {
+        FromDate = fromDate;
+    }
+
+    public void setToDate(String toDate) {
+        ToDate = toDate;
+    }
+
+    public void setPackage(String aPackage) {
+        Package = aPackage;
+    }
+
+    public void setStatus(String status) {
+        Status = status;
+    }
 }

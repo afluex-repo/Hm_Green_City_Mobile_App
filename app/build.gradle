@@ -21,11 +21,11 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField "String", "BASE_URL", "\"http://demo1.afluex.com/\""
+            buildConfigField "String", "BASE_URL", "\"http://admin.hmgreencity.com/\""
 //            buildConfigField "String", "BASE_URL", "\"http://demo1.afluex.com/\""
         }
         release {
-            buildConfigField "String", "BASE_URL", "\"http://demo1.afluex.com/\""
+            buildConfigField "String", "BASE_URL", "\"http://admin.hmgreencity.com/\""
 //            buildConfigField "String", "BASE_URL", "\"http://demo1.afluex.com/\""
             lintOptions {
                 disable 'MissingTranslation'
