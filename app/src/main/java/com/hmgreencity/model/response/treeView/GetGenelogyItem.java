@@ -62,90 +62,88 @@ public class GetGenelogyItem {
     @SerializedName("HoldRight")
     private String HoldRight;
 
- @SerializedName("YellowDate")
+    @SerializedName("YellowDate")
     private String YellowDate;
-@SerializedName("Top Up Amount")
+    @SerializedName("TopupAmount")
     private String TopUpAmount;
-@SerializedName("Activation Date")
-    private String ActivationDate;
-@SerializedName("Sponsor Details")
+
+    @SerializedName("SponsorDetails")
     private String SponsorDetails;
-@SerializedName("Last New Buisness Amount")
+    @SerializedName("LastNewBusinessAmount")
     private String LastNewBuisnessAmount;
-@SerializedName("Last New Buisness Top Up Date")
+    @SerializedName("LastNewBusinessTopupDate")
     private String LastNewBuisnessTopUpDate;
 
 
-
-    public String getLoginId(){
+    public String getLoginId() {
         return loginId;
     }
 
-    public String getBusinessLeft(){
+    public String getBusinessLeft() {
         return businessLeft;
     }
 
-    public String getImageURL(){
+    public String getImageURL() {
         return imageURL;
     }
 
-    public String getFkSponsorId(){
+    public String getFkSponsorId() {
         return fkSponsorId;
     }
 
-    public String getBusinessRight(){
+    public String getBusinessRight() {
         return businessRight;
     }
 
-    public String getLeg(){
+    public String getLeg() {
         return leg;
     }
 
-    public String getActiveLeft(){
+    public String getActiveLeft() {
         return activeLeft;
     }
 
-    public String getInactiveLeft(){
+    public String getInactiveLeft() {
         return inactiveLeft;
     }
 
-    public String getSponsorId(){
+    public String getSponsorId() {
         return sponsorId;
     }
 
-    public String getFkUserId(){
+    public String getFkUserId() {
         return fkUserId;
     }
 
-    public String getActiveRight(){
+    public String getActiveRight() {
         return activeRight;
     }
 
-    public String getFkParentId(){
+    public String getFkParentId() {
         return fkParentId;
     }
 
-    public String getTeamPermanent(){
+    public String getTeamPermanent() {
         return teamPermanent;
     }
 
-    public String getInactiveRight(){
+    public String getInactiveRight() {
         return inactiveRight;
     }
 
-    public String getMemberName(){
+    public String getMemberName() {
         return memberName;
     }
 
-    public String getId(){
+    public String getId() {
         return id;
     }
 
-    public String getActivationDate(){
+    public String getActivationDate() {
         return activationDate;
     }
 
-    public String getMemberLevel(){
+    public String getMemberLevel() {
         return memberLevel;
     }
 

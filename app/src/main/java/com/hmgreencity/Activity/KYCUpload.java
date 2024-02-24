@@ -205,6 +205,10 @@ public class KYCUpload extends BaseActivity {
             @Override
             public void onFailure(Call<ResponseKYc> call, Throwable t) {
 
+                Toast.makeText(KYCUpload.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+
+                Log.e("Rejbjkab",t.getMessage());
+
             }
         });
 

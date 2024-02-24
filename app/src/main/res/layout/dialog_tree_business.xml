@@ -58,6 +58,7 @@
                         android:layout_weight="1"
                         android:text="Login ID"
                         android:textSize="13sp"
+                        android:textStyle="bold"
                         app:layout_constraintEnd_toStartOf="@+id/tv_login_id"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +73,7 @@
                         android:layout_marginEnd="8dp"
                         android:layout_weight="3"
                         android:hint="NA"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -92,6 +93,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="2dp"
                         android:layout_weight="1"
+                        android:textStyle="bold"
                         android:text="Sponsor ID"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toStartOf="@+id/tv_sponsor_id"
@@ -108,7 +110,7 @@
                         android:layout_marginEnd="8dp"
                         android:layout_weight="3"
                         android:hint="NA"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -129,6 +131,7 @@
                         android:layout_marginTop="2dp"
                         android:layout_weight="1"
                         android:text="Joining On"
+                        android:textStyle="bold"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toStartOf="@+id/tv_join_on"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -145,7 +148,7 @@
                         android:layout_weight="3"
                         android:hint="NA"
 
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -182,6 +185,7 @@
                         android:layout_marginTop="2dp"
                         android:layout_weight="1"
                         android:text="Top Up Amount"
+                        android:textStyle="bold"
                         android:textSize="13sp"
                         app:layout_constraintEnd_toStartOf="@+id/tv_join_on"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -198,7 +202,7 @@
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -210,7 +214,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -233,7 +237,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -245,7 +249,7 @@ android:id="@+id/tv_activation_date"
                     android:orientation="horizontal">
 
                     <TextView
-
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -268,7 +272,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -280,7 +284,7 @@ android:id="@+id/tv_activation_date"
                     android:orientation="horizontal">
 
                     <TextView
-
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -303,7 +307,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -315,7 +319,7 @@ android:id="@+id/tv_activation_date"
                     android:orientation="horizontal">
 
                     <TextView
-
+                        android:textStyle="bold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -338,7 +342,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -350,6 +354,7 @@ android:id="@+id/tv_activation_date"
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textStyle="bold"
                         android:id="@+id/textView810"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -373,7 +378,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_weight="1"
                         android:hint="NA"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/colorAccent"
+                       android:textColor="#000000"
                         android:textSize="13sp" />
 
 
@@ -418,6 +423,7 @@ android:id="@+id/tv_activation_date"
                         android:text="Type"
                         android:textAppearance="@style/TextFieldBold"
                         android:textColor="@color/textcolor"
+                        android:textStyle="bold"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toTopOf="@+id/tvlegActive"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -431,6 +437,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
+                        android:textStyle="bold"
                         android:paddingLeft="5dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
@@ -446,6 +453,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
+                        android:textStyle="bold"
                         android:paddingLeft="5dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
@@ -462,6 +470,7 @@ android:id="@+id/tv_activation_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
+                        android:textStyle="bold"
                         android:paddingLeft="5dp"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
@@ -481,6 +490,7 @@ android:id="@+id/tv_activation_date"
                         android:paddingTop="4dp"
                         android:paddingBottom="4dp"
                         android:text="Total"
+                        android:textStyle="bold"
                         android:textColor="@color/textcolor"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -498,6 +508,7 @@ android:id="@+id/tv_activation_date"
                         android:textAppearance="@style/TextFieldBold"
                         android:textColor="@color/textcolor"
                         android:textSize="14sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -530,6 +541,7 @@ android:id="@+id/tv_activation_date"
                         android:paddingRight="10dp"
                         android:paddingBottom="4dp"
                         android:text="Left"
+                        android:textStyle="bold"
                         android:textAppearance="@style/TextFieldBold"
                         android:textColor="@color/textcolor"
                         android:textSize="14sp"
@@ -633,6 +645,7 @@ android:id="@+id/tv_activation_date"
                         android:paddingRight="10dp"
                         android:paddingBottom="4dp"
                         android:text="Right"
+                        android:textStyle="bold"
                         android:textAppearance="@style/TextFieldBold"
                         android:textColor="@color/textcolor"
                         android:textSize="14sp"
@@ -738,6 +751,7 @@ android:id="@+id/tv_activation_date"
                         android:paddingRight="10dp"
                         android:paddingBottom="4dp"
                         android:text="Total"
+                        android:textStyle="bold"
                         android:textAppearance="@style/TextFieldBold"
                         android:textColor="@color/textcolor"
                         android:textSize="14sp"
