@@ -408,7 +408,7 @@ public class KYCUpload extends BaseActivity {
         }
     }
 
-    //for zoom image
+
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
