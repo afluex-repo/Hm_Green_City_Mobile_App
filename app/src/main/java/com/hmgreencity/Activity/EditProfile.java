@@ -84,8 +84,6 @@ public class EditProfile extends BaseActivity implements IPickCancel, IPickResul
     Button btnUpdate;
     @BindView(R.id.tv_lastname)
     TextView tvLastname;
-
-
     @BindView(R.id.txt_userId)
     TextView txt_userId;
 

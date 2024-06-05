@@ -9,9 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.hmgreencity.R;
 import com.hmgreencity.app.PreferencesManager;
-import com.hmgreencity.common.NetworkUtils;
 import com.hmgreencity.constants.BaseActivity;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
