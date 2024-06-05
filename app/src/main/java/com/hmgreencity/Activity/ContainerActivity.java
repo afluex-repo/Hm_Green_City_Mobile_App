@@ -1,5 +1,4 @@
 package com.hmgreencity.Activity;
-
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -21,7 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.google.android.material.navigation.NavigationView;
 import com.google.gson.JsonObject;
 import com.hmgreencity.BuildConfig;
@@ -43,7 +40,6 @@ import com.hmgreencity.fragment.UnpaidIncome;
 import com.hmgreencity.fragment.ViewProfile;
 import com.hmgreencity.model.response.ResponseDashboard;
 import com.squareup.picasso.Picasso;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -73,8 +69,6 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
     NavigationView navView;
     @BindView(R.id.drawer_layout)
     DrawerLayout drawerLayout;
-
-
     @BindView(R.id.img_rank)
     ImageView img_rank;
     @BindView(R.id.img_settings)
@@ -88,6 +82,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
  @BindView(R.id.ll_not_dashboard)
     LinearLayout ll_not_dashboard;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +94,6 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
         navView.setNavigationItemSelectedListener(this);
         View hView = navView.getHeaderView(0);
         drawerMenuItems = new DrawerMenuItems(hView);
-
         ReplaceFragment(new Dashboard(), "Dashboard");
     }
 
@@ -239,6 +233,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
             drawerLayout.closeDrawer(GravityCompat.END);
         }
     }
+
     private void AssociateDashBoardTotals() {
         showLoading();
         JsonObject object = new JsonObject();
@@ -270,18 +265,8 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
                         }else{
 
                         }
-
-
-
-
-
-
                         txt_userId.setText(PreferencesManager.getInstance(context).getLoginId());
                         txt_heading.setText("Hi!!! "+response.body().getName());
-
-
-
-
                     } else showMessage(response.body().getMessage());
                 } catch (Exception e) {
                     Log.e("SEFFDKM",e.getMessage());

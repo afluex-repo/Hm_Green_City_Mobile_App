@@ -1,5 +1,4 @@
 package com.hmgreencity.Activity;
-
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -7,9 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
-
 import com.google.gson.JsonObject;
 import com.hmgreencity.R;
 import com.hmgreencity.app.PreferencesManager;
@@ -19,7 +16,6 @@ import com.hmgreencity.constants.BaseActivity;
 import com.hmgreencity.model.request.RequestSignup;
 import com.hmgreencity.model.response.ResponseSignup;
 import com.hmgreencity.model.response.ResponseSponsorName;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

@@ -1,8 +1,6 @@
 package com.hmgreencity.model.response;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
 import java.util.ArrayList;
 
 public class ResponseKYc {
@@ -43,7 +41,6 @@ public class ResponseKYc {
     public void setSuccessMessage(String successMessage) {
         this.successMessage = successMessage;
     }
-
 
     public ArrayList<lstKycDocuments> getLstKycdocuments() {
         return lstKycdocuments;

@@ -46,6 +46,9 @@ public class PayoutLedger extends BaseFragment {
     EditText tvToDate;
     @BindView(R.id.btn_search)
     ImageView btnSearch;
+
+    @BindView(R.id.tv_net_balance)
+    TextView tv_net_balance;
     private Unbinder unbinder;
 
     @BindView(R.id.recyclerview1)
@@ -80,6 +83,9 @@ public class PayoutLedger extends BaseFragment {
                 hideLoading();
                 LoggerUtil.logItem(response.body());
                 if (response.body().getStatus().equalsIgnoreCase("0")) {
+
+                    tv_net_balance.setText(response.body().getLstpayoutledger().get(0).getPayoutBalance());
+
                     PayoutLedgerAdapter adapter = new PayoutLedgerAdapter(response.body().getLstpayoutledger(), getContext());
                     recyclerview1.setAdapter(adapter);
                 } else showMessage(response.body().getMessage());

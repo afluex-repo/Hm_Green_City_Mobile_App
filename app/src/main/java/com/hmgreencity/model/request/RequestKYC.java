@@ -10,9 +10,6 @@ public class RequestKYC {
 
  @SerializedName("Pk_UserID")
     private String Pk_UserID;
-
-
-
     @SerializedName("AdharImage")
     private String AdharImage;
     @SerializedName("AdharNumber")

@@ -1,5 +1,4 @@
 package com.hmgreencity.Activity;
-
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -8,11 +7,6 @@ import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
-import com.hmgreencity.Activity.Login;
 import com.hmgreencity.R;
 import com.hmgreencity.app.PreferencesManager;
 import com.hmgreencity.common.NetworkUtils;

@@ -158,6 +158,54 @@
             android:background="#CACAF8"
             app:layout_constraintTop_toBottomOf="@+id/tv_sector_name"/>
 
+
+        <LinearLayout
+            android:id="@+id/ll_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_block_name"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="@style/TextField_Bold"
+                android:layout_width="0dp"
+                android:padding="4dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_gradient_dashboard"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Block Name :"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+            <TextView
+                android:id="@+id/tv_block_name"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextField_Bold"
+
+                app:layout_constraintStart_toEndOf="@+id/text_sector_name"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view70"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACAF8"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sector_name"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

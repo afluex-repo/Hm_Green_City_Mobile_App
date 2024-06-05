@@ -1,8 +1,5 @@
 package com.hmgreencity.retrofit;
-
 import com.google.gson.JsonObject;
-import com.hmgreencity.adapter.DownlineSearchAdapter;
-import com.hmgreencity.model.CommonResponse;
 import com.hmgreencity.model.ResponseDownlineAssociate;
 import com.hmgreencity.model.request.RequestBusinessReportSearch;
 import com.hmgreencity.model.request.RequestChangePassword;
@@ -38,10 +35,8 @@ import com.hmgreencity.model.response.responsePayoutLedger.ResponsePayoutLedger;
 import com.hmgreencity.model.response.responsePayoutReport.ResponsePayoutReport;
 import com.hmgreencity.model.response.responsePayoutReportSearch.ResponsePayoutReportSearch;
 import com.hmgreencity.model.response.responseTopUpList.ResponseTopUpList;
-import com.hmgreencity.model.response.responseTotalInvastment.ResponseTotalInvastment;
 import com.hmgreencity.model.response.responseUnpaidIncome.ResponseUnpaidIncome;
 import com.hmgreencity.model.response.treeView.ResponseTreeView;
-
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -115,12 +110,11 @@ public interface ApiServices {
     @POST("/webapi/SearchDownline")
     Call<ResponseDownlineSearch> GetDownlineSearch(@Body RequestDownlineSearch login);
 
-    @POST("WebAPI/UploadKYCDetails")
+    @POST("WebAPI/KYCDocuments")
     Call<ResponseKYc> UploadKyc(@Body RequestBody login);
 
  @POST("WebAPI/GetKYCList")
     Call<ResponseKYc> GetKYCList(@Body RequestKYC login);
-
 
     @POST("WebAPI/GetSponserList")
     Call<ResponseSponsorList>GetSponserList(@Body JsonObject login);
@@ -130,7 +124,6 @@ public interface ApiServices {
     Call<ResponseRegistration>DownlineRegistrationAction(@Body JsonObject login);
     @POST("WebAPI/DownlineRankAchieverReports")
     Call<ResponseDownlineRank>DownlineRankAchieverReports(@Body JsonObject login);
-
 
     @POST("WebAPI/DownlineRankAchieverAssociateReports")
     Call<ResponseDownlineAssociate>DownlineRankAchieverAssociateReports(@Body JsonObject login);

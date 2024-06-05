@@ -17,8 +17,6 @@
         android:padding="8dp"
         android:hint="Search Sponsor"/>
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_sponsor"
         android:layout_width="match_parent"

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,9 +21,12 @@ public class TopUpListAdopter extends RecyclerView.Adapter<TopUpListAdopter.View
     private List<LsttopupreportItem> models;
     private Context context;
 
-    public TopUpListAdopter(List<LsttopupreportItem> productList, Context context) {
-        this.models = productList;
+    private String type;
+
+    public TopUpListAdopter(List<LsttopupreportItem> models, Context context, String type) {
+        this.models = models;
         this.context = context;
+        this.type = type;
     }
 
     @Override
@@ -41,6 +45,13 @@ public class TopUpListAdopter extends RecyclerView.Adapter<TopUpListAdopter.View
         viewHolder.tvProductName.setText(models.get(i).getProductName());
         viewHolder.tvAmount.setText("₹ " + models.get(i).getAmount());
         viewHolder.tvPlotNumber.setText(models.get(i).getPlotNumber());
+
+        if(type.equals("New")){
+            viewHolder.ll_block.setVisibility(View.VISIBLE);
+            viewHolder.tv_block_name.setText(models.get(i).getBlockName());
+        }else{
+            viewHolder.ll_block.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -64,7 +75,11 @@ public class TopUpListAdopter extends RecyclerView.Adapter<TopUpListAdopter.View
         @BindView(R.id.tv_action)
         TextView tvAction;
         @BindView(R.id.tv_plot_Number)
-        TextView tvPlotNumber;
+
+        TextView tvPlotNumber; @BindView(R.id.tv_block_name)
+        TextView tv_block_name;
+        @BindView(R.id.ll_block)
+        LinearLayout ll_block;
 
         public ViewHolder(View view) {
             super(view);

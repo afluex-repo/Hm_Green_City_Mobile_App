@@ -1,5 +1,4 @@
 package com.hmgreencity.retrofit;
-
 import androidx.annotation.StringRes;
 
 
@@ -29,4 +28,5 @@ public interface MvpView {
     void getAccpetRejectBooking(String id, String bookid, String action, String remark, String reason);
 
     void getClick(int position, String value);
+
 }

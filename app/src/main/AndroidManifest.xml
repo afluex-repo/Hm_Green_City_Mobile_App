@@ -31,7 +31,8 @@
         android:roundIcon="@drawable/hm_logo"
         android:supportsRtl="true"
         android:theme="@style/AppThemeWithFullScreen"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
         <activity android:name=".Activity.Splash"
             android:exported="true">
             <intent-filter>
@@ -72,13 +73,24 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.hmgreencity.com.vansuita.pickimage.provider"
+            android:authorities="com.hmgreencity"
             android:exported="false"
             android:grantUriPermissions="true"
             tools:replace="android:authorities">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.hmgreencity"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path"/>
         </provider>
 
         <activity

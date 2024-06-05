@@ -48,6 +48,8 @@ public class GetGenelogyItem {
 
     @SerializedName("MemberName")
     private String memberName;
+@SerializedName("JoiningDate")
+    private String JoiningDate;
 
     @SerializedName("Id")
     private String id;
@@ -73,6 +75,8 @@ public class GetGenelogyItem {
     private String LastNewBuisnessAmount;
     @SerializedName("LastNewBusinessTopupDate")
     private String LastNewBuisnessTopUpDate;
+ @SerializedName("StatusUser")
+    private String StatusUser;
 
 
     public String getLoginId() {
@@ -274,5 +278,21 @@ public class GetGenelogyItem {
 
     public void setLastNewBuisnessTopUpDate(String lastNewBuisnessTopUpDate) {
         LastNewBuisnessTopUpDate = lastNewBuisnessTopUpDate;
+    }
+
+    public String getStatusUser() {
+        return StatusUser;
+    }
+
+    public void setStatusUser(String statusUser) {
+        StatusUser = statusUser;
+    }
+
+    public String getJoiningDate() {
+        return JoiningDate;
+    }
+
+    public void setJoiningDate(String joiningDate) {
+        JoiningDate = joiningDate;
     }
 }

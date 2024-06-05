@@ -1,5 +1,4 @@
 package com.hmgreencity.fragment;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
@@ -17,14 +16,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import com.bumptech.glide.Glide;
 import com.google.gson.JsonObject;
 import com.hmgreencity.Activity.ContainerActivity;
-import com.hmgreencity.Activity.SignUp;
 import com.hmgreencity.R;
 import com.hmgreencity.app.AppConfig;
 import com.hmgreencity.app.PreferencesManager;
@@ -32,13 +28,10 @@ import com.hmgreencity.common.LoggerUtil;
 import com.hmgreencity.constants.BaseFragment;
 import com.hmgreencity.model.response.treeView.GetGenelogyItem;
 import com.hmgreencity.model.response.treeView.ResponseTreeView;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import butterknife.Unbinder;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -435,6 +428,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
         TextView tv_hold_left = BusinessDialog.findViewById(R.id.tv_hold_left);
         TextView hold_right = BusinessDialog.findViewById(R.id.hold_right);
         TextView hold_total = BusinessDialog.findViewById(R.id.hold_total);
+        TextView tv_status = BusinessDialog.findViewById(R.id.tv_status);
 
         TextView tv_login_id = BusinessDialog.findViewById(R.id.tv_login_id);
         TextView tv_activate_with = BusinessDialog.findViewById(R.id.tv_activate_with);
@@ -469,7 +463,30 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                 tv_login_id.setText(tree_view_arr.get(i).getLoginId());
 //        tv_activate_with.setText(tree_view_arr.get(i).getString("PackageAmount"));
                 tv_sponsor_id.setText(tree_view_arr.get(i).getSponsorId());
-                tv_join_on.setText(tree_view_arr.get(i).getActivationDate());
+
+//                String mStringDate = "25-Nov-15 14:23:34";
+//                String oldFormat= "MMM dd yyyy HH:mm a";
+//                String newFormat= "dd-mm-yyyy";
+//
+//                String formatedDate = "";
+//                SimpleDateFormat dateFormat = new SimpleDateFormat(oldFormat);
+//                Date myDate = null;
+//                try {
+//                    myDate = dateFormat.parse(tree_view_arr.get(i).getJoiningDate());
+//                } catch (java.text.ParseException e) {
+//                    e.printStackTrace();
+//                }
+//
+//                SimpleDateFormat timeFormat = new SimpleDateFormat(newFormat);
+//                formatedDate = timeFormat.format(myDate);
+//
+//               Log.e("vadvsdbsb",formatedDate);
+
+
+
+
+
+                tv_join_on.setText(tree_view_arr.get(i).getJoiningDate());
 
                 active_left.setText(tree_view_arr.get(i).getActiveLeft());
                 inactive_left.setText(tree_view_arr.get(i).getInactiveLeft());
@@ -485,6 +502,11 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                Log.e("FThgh",tree_view_arr.get(i).getHoldLeft());
                 tv_hold_left.setText(tree_view_arr.get(i).getHoldLeft());
                 hold_right.setText(tree_view_arr.get(i).getHoldRight());
+                if (tree_view_arr.get(i).getStatusUser() != null) {
+                    tv_status.setText(tree_view_arr.get(i).getStatusUser());
+                } else {
+                    tv_status.setText("N/A");
+                }
                 if (tree_view_arr.get(i).getYellowDate() != null) {
                     tv_yellow_date.setText(tree_view_arr.get(i).getYellowDate());
                 } else {
@@ -1005,4 +1027,5 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
         tree_l_four_seven_customer_spillby.setText("");
         tree_l_four_eight_customer_spillby.setText("");
     }
+
 }

@@ -1,5 +1,4 @@
 package com.hmgreencity.constants;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -16,11 +15,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 import com.google.gson.JsonObject;
 import com.hmgreencity.R;
 import com.hmgreencity.app.PreferencesManager;
@@ -32,12 +29,9 @@ import com.hmgreencity.common.Utils;
 import com.hmgreencity.retrofit.ApiServices;
 import com.hmgreencity.retrofit.MvpView;
 import com.hmgreencity.retrofit.ServiceGenerator;
-
 import java.util.Locale;
 import java.util.Random;
-
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
 import static com.hmgreencity.app.AppConfig.PAYLOAD_BUNDLE;
 
 

@@ -150,7 +150,7 @@ public class TopUpList extends BaseFragment {
                 hideLoading();
                 LoggerUtil.logItem(response.body());
                 if (response.body().getStatus().equalsIgnoreCase("0")) {
-                    TopUpListAdopter adapter = new TopUpListAdopter(response.body().getLsttopupreport(), getContext());
+                    TopUpListAdopter adapter = new TopUpListAdopter(response.body().getLsttopupreport(), getContext(),"Old");
                     binding.recyclerview1.setAdapter(adapter);
                 } else showMessage(response.body().getMessage());
             }

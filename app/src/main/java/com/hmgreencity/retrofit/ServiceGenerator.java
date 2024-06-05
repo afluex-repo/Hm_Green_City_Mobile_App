@@ -1,15 +1,11 @@
 package com.hmgreencity.retrofit;
-
 import android.text.TextUtils;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hmgreencity.BuildConfig;
 import com.hmgreencity.app.AppConfig;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

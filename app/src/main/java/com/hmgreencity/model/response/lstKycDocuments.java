@@ -34,6 +34,25 @@ public class lstKycDocuments {
     @Expose
     private String documentStatus;
 
+
+
+    @SerializedName("AccountHolderName")
+    @Expose
+    private String BankHolderName;
+
+    @SerializedName("BankName")
+    @Expose
+    private String BankName;
+
+    @SerializedName("IFSCCode")
+    @Expose
+    private String IFSCCode;
+
+
+    @SerializedName("BankBranch")
+    @Expose
+    private String BankBranch;
+
     public String getAdharNumber() {
         return adharNumber;
     }
@@ -112,5 +131,37 @@ public class lstKycDocuments {
 
     public void setAdharBacksideImage(String adharBacksideImage) {
         AdharBacksideImage = adharBacksideImage;
+    }
+
+    public String getBankHolderName() {
+        return BankHolderName;
+    }
+
+    public void setBankHolderName(String bankHolderName) {
+        BankHolderName = bankHolderName;
+    }
+
+    public String getBankName() {
+        return BankName;
+    }
+
+    public void setBankName(String bankName) {
+        BankName = bankName;
+    }
+
+    public String getIFSCCode() {
+        return IFSCCode;
+    }
+
+    public void setIFSCCode(String IFSCCode) {
+        this.IFSCCode = IFSCCode;
+    }
+
+    public String getBankBranch() {
+        return BankBranch;
+    }
+
+    public void setBankBranch(String bankBranch) {
+        BankBranch = bankBranch;
     }
 }

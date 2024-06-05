@@ -1,22 +1,17 @@
 package com.hmgreencity.adapter;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.hmgreencity.R;
 import com.hmgreencity.model.ModelDownlineAssociate;
-
 import java.util.ArrayList;
 
 public class AdapterDownlineAssociate extends RecyclerView.Adapter<AdapterDownlineAssociate.HolderDownlineAssociate> {
-
 
     private Context context;
     private ArrayList<ModelDownlineAssociate> downlineAssociateArrayList;
