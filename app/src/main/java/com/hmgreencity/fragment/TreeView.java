@@ -40,7 +40,6 @@ import retrofit2.Response;
 public class TreeView extends BaseFragment implements View.OnClickListener {
     Unbinder unbinder;
     Dialog dialog, BusinessDialog;
-
     Button btn_downline_rank;
 
     //    Items
@@ -608,7 +607,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_one_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_one_customer_spillby.setText(String.format("Sponsor by :%s", tree_view_arr.get(j).getFkSponsorId()));
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_one_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                             //CASE 2
@@ -623,7 +622,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_two_a_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_two_a_customer_spillby.setText(String.format("Sponsor by :%s", tree_view_arr.get(j).getFkSponsorId()));
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_two_a_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("2") &&
@@ -637,7 +636,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_two_b_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_two_b_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_two_b_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                             //CASE 3
@@ -653,7 +652,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_three_a_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_three_a_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_a_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
@@ -667,7 +666,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_three_b_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_three_b_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_b_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -681,7 +680,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_three_c_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_three_c_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_c_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("3") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
@@ -695,7 +694,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_three_d_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_three_d_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_three_d_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         }
@@ -711,7 +710,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
                                                 tree_l_four_one_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
 
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_one_photo);
 
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
@@ -725,7 +724,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_two_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_two_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_two_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -738,7 +737,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_three_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_three_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_three_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
@@ -751,7 +750,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_four_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_four_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_four_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -764,7 +763,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_five_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_five_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_five_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")
@@ -777,7 +776,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_six_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_six_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_six_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("L")
@@ -790,7 +789,7 @@ public class TreeView extends BaseFragment implements View.OnClickListener {
 //                                                tree_l_four_seven_customer_spillby.setVisibility(View.VISIBLE);
                                                 tree_l_four_seven_customer_spillby.setText("Sponsor by :" + tree_view_arr.get(j).getFkSponsorId());
                                             }
-                                            Glide.with(context).load("http://" + tree_view_arr.get(j).getImageURL())
+                                            Glide.with(context).load("https://" + tree_view_arr.get(j).getImageURL())
                                                     .into(tree_l_four_seven_photo);
                                             Log.e("LOFGFGHF", "LOGIN" + tree_view_arr.get(j).getLoginId() + "::::" + tree_view_arr.get(j).getImageURL());
                                         } else if (tree_view_arr.get(j).getMemberLevel().equalsIgnoreCase("4") && tree_view_arr.get(j).getLeg().equalsIgnoreCase("R")

@@ -1,7 +1,7 @@
 package com.hmgreencity.model.response;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
 
 public class lstKycDocuments {
     @SerializedName("AdharNumber")
@@ -33,9 +33,6 @@ public class lstKycDocuments {
     @SerializedName("DocumentStatus")
     @Expose
     private String documentStatus;
-
-
-
     @SerializedName("AccountHolderName")
     @Expose
     private String BankHolderName;

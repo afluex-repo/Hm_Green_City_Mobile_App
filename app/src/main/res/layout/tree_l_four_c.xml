@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="3dp">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/tree_l_four_three_photo"
         android:layout_width="35dp"
         android:layout_height="35dp"

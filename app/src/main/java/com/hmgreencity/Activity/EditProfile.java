@@ -1,5 +1,4 @@
 package com.hmgreencity.Activity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;

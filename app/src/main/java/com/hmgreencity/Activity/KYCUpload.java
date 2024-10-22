@@ -44,7 +44,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-
 public class KYCUpload extends BaseActivity {
 
     @BindView(R.id.tv_adhar_number)
@@ -74,7 +73,8 @@ public class KYCUpload extends BaseActivity {
     @BindView(R.id.btn_uplode_kyc)
     Button btnUplodeAdhar;
 
-    @BindView(R.id.tv_title)
+    @BindView(R.id.tv_title
+    )
     TextView tvTitle;
 
     @BindView(R.id.txt_userId)
@@ -408,8 +408,6 @@ public class KYCUpload extends BaseActivity {
         }
     }
 
-
-
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         scaleGestureDetector.onTouchEvent(motionEvent);
@@ -426,5 +424,6 @@ public class KYCUpload extends BaseActivity {
             return true;
         }
     }
+
 
 }

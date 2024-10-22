@@ -47,12 +47,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+
 public class ContainerActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerMenuItems drawerMenuItems;
     @BindView(R.id.img_side_menu)
     ImageButton imgSideMenu;
-
     @BindView(R.id.txt_userId)
     TextView txt_userId;
     @BindView(R.id.txt_heading)
@@ -95,6 +96,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
         View hView = navView.getHeaderView(0);
         drawerMenuItems = new DrawerMenuItems(hView);
         ReplaceFragment(new Dashboard(), "Dashboard");
+
     }
 
     @Override
@@ -155,7 +157,7 @@ public class ContainerActivity extends BaseActivity implements NavigationView.On
             switch (view.getId()) {
                 case R.id.img_profile:
                     Toast.makeText(context, "Profile", Toast.LENGTH_SHORT).show();
-                    //goToActivity(ContainerActivity.this, Profile.class, null);
+
                     break;
                 case R.id.tv_dashboard:
                     if (!(currentFragment instanceof Dashboard))

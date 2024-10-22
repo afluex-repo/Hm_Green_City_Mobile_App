@@ -9,19 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/background_curve"
-        >
-
+        android:background="@drawable/background_curve">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
             app:popupTheme="@style/AppTheme.PopupOverlay">
-
             <LinearLayout
                 android:layout_width="match_parent"
-
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <LinearLayout
@@ -34,7 +30,6 @@
                         android:layout_centerVertical="true"
                         android:background="?attr/selectableItemBackground"
                         android:gravity="center">
-
                         <ImageButton
                             android:id="@+id/img_back"
                             android:layout_width="wrap_content"
@@ -44,11 +39,7 @@
                             android:padding="15dp"
                             android:scaleX="0.7"
                             android:scaleY="0.6" />
-
-
-
                     </RelativeLayout>
-
                     <TextView
                         android:id="@+id/txt_header"
                         android:layout_width="wrap_content"
@@ -73,9 +64,6 @@
                         android:textSize="18sp"
                         android:textColor="@color/white"
                         android:layout_marginStart="4dp"/>
-
-
-
                     <LinearLayout
                         android:id="@+id/ll_button"
                         android:layout_width="match_parent"
@@ -89,10 +77,8 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginEnd="16dp"
-                            android:src="@drawable/logoh"
-
+                            android:src="@drawable/hm_logo"
                             android:background="@null"
-
                             android:layout_centerVertical="true"/>
                         <ImageButton
                             android:id="@+id/img_settings"
@@ -106,11 +92,6 @@
                             android:layout_centerVertical="true"/>
                     </LinearLayout>
                 </LinearLayout>
-
-
-
-
-
                 <LinearLayout
                     android:id="@+id/ll_dashboard"
                     android:layout_width="match_parent"
@@ -133,7 +114,6 @@
                             android:src="@drawable/ic_person"
                             app:civ_border_width="1dp"
                             app:civ_border_color="@color/white"/>
-
                         <TextView
                             android:id="@+id/txt_heading"
                             android:layout_width="wrap_content"
@@ -142,7 +122,6 @@
                             android:layout_gravity="center"
                             android:textColor="@color/white"
                             android:layout_marginTop="8dp"/>
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -150,14 +129,12 @@
                             android:layout_gravity="center"
                             android:textColor="@color/white"
                             android:layout_marginTop="8dp"/>
-
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="120dp"
                         android:orientation="vertical">
-
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/img_rank"
                             android:layout_width="60dp"
@@ -167,7 +144,6 @@
                             android:text="Hi!!! "
                             android:textColor="@color/white"
                             android:layout_marginTop="8dp"/>
-
                         <TextView
                             android:id="@+id/txt_rank"
                             android:layout_width="wrap_content"
@@ -176,9 +152,7 @@
                             android:layout_gravity="center"
                             android:textColor="@color/white"
                             android:layout_marginTop="8dp"/>
-
                     </LinearLayout>
-
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/ll_not_dashboard"
@@ -202,21 +176,13 @@
                             android:text="Page Title"
                             android:gravity="center"
                             android:layout_gravity="center"
-
                             android:textAppearance="@style/TextField_Bold"
                             android:textColor="@color/white"
                             android:textSize="22sp" />
-
-
                     </LinearLayout>
-
                 </LinearLayout>
-
-
             </LinearLayout>
-
         </androidx.appcompat.widget.Toolbar>
-
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_below="@+id/app_bar"
@@ -232,7 +198,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"
         android:paddingBottom="4dp">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -242,7 +207,6 @@
             android:textAppearance="@style/TextFieldBold"
             android:textColor="@color/colorBlack"
             android:textSize="14sp" />
-
         <EditText
             android:id="@+id/tv_adhar_number"
             android:layout_width="match_parent"
@@ -521,7 +485,6 @@
         <Button
             android:id="@+id/btn_document"
             android:layout_width="match_parent"
-
             android:layout_marginEnd="32dp"
             android:layout_height="35dp"
             android:layout_marginTop="5dp"

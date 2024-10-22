@@ -129,7 +129,6 @@
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:visibility="visible">
-
             <include layout="@layout/tree_l_one" />
 
             <View
@@ -175,7 +174,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center">
-
                     <include layout="@layout/tree_l_two_a" />
 
                 </LinearLayout>
@@ -185,7 +183,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center">
-
                     <include layout="@layout/tree_l_two_b" />
 
                 </LinearLayout>
@@ -312,7 +309,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center">
-
                     <include layout="@layout/tree_l_three_b" />
                 </LinearLayout>
 

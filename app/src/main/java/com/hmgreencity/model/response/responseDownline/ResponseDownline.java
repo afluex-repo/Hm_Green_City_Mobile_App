@@ -6,8 +6,6 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class ResponseDownline {
-
-
     @SerializedName("Status")
     @Expose
     private String status;
