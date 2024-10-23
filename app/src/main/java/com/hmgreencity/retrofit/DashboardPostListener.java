@@ -6,4 +6,6 @@ public interface DashboardPostListener {
     void followUser(String userId, boolean isFollow, int pos);
 
     void sharePost(String postId, String userId);
+
+
 }

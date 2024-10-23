@@ -46,9 +46,10 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 
+
 public interface ApiServices {
 
-    @POST("WebAPI/login")
+    @POST("WebAPI/loginNew")
     Call<ResponseLogin> getLogin(@Body RequestLogin login);
 
     @POST("WebAPI/Registration")
@@ -62,7 +63,8 @@ public interface ApiServices {
 
     @POST("WebAPI/TopupList")
     Call<ResponseTopUpList> TopUpLists(@Body RequestTopUpList login);
- @POST("WebAPI/TopupListNew")
+
+    @POST("WebAPI/TopupListNew")
     Call<ResponseTopUpList> TopUpListsNew(@Body RequestTopUpList login);
 
     @POST("WebAPI/ViewProfile")

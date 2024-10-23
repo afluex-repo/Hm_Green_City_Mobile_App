@@ -1,27 +1,22 @@
 package com.hmgreencity.Activity;
-
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
-
 import com.hmgreencity.R;
 import com.hmgreencity.app.PreferencesManager;
 import com.hmgreencity.common.LoggerUtil;
-import com.hmgreencity.common.NetworkUtils;
 import com.hmgreencity.constants.BaseActivity;
 import com.hmgreencity.model.request.RequestLogin;
 import com.hmgreencity.model.response.ResponseLogin;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 
 public class Login extends BaseActivity {
 
@@ -30,11 +25,13 @@ public class Login extends BaseActivity {
     @BindView(R.id.et_Password)
     EditText etPassword;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+
     }
 
     @OnClick({R.id.tv_forgot_password, R.id.btn_login, R.id.tv_gotoRegister})
