@@ -28,7 +28,6 @@ import com.hmgreencity.app.PreferencesManager;
 import com.hmgreencity.common.FileUtils;
 import com.hmgreencity.common.LoggerUtil;
 import com.hmgreencity.common.NetworkUtils;
-import com.hmgreencity.common.Utils;
 import com.hmgreencity.constants.BaseActivity;
 import com.hmgreencity.fragment.ChangePassword;
 import com.hmgreencity.model.request.RequestUpdateProfile;
@@ -42,13 +41,11 @@ import com.vansuita.pickimage.dialog.PickImageDialog;
 import com.vansuita.pickimage.enums.EPickType;
 import com.vansuita.pickimage.listeners.IPickCancel;
 import com.vansuita.pickimage.listeners.IPickResult;
-
 import java.io.File;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import id.zelory.compressor.Compressor;
+import id.zelory.compressor.constraint.Compression;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -250,6 +247,31 @@ public class EditProfile extends BaseActivity implements IPickCancel, IPickResul
 
     File homeWorkFile, compressedImageFile;
 
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+//            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+//            if (resultCode == RESULT_OK) {
+//                imgMember.setImageBitmap(result.getBitmap());
+//                homeWorkFile = FileUtils.getFile(context, result.getUri());
+//                compressedImageFile = new Compression.Builder(this)
+//                        .setMaxWidth(800)
+//                        .setMaxHeight(640)
+//                        .setQuality(100)
+//                        .setCompressFormat(Bitmap.CompressFormat.WEBP)
+//                        .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(
+//                                Environment.DIRECTORY_PICTURES).getAbsolutePath())
+//                        .build()
+//                        .compressToFile(homeWorkFile);
+//                uploadProfilePic();
+//                Log.e("ADDRESS File ", homeWorkFile.toString());
+//            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+////                        Exception error = result.getError();
+//            }
+//        }
+//    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -258,22 +280,30 @@ public class EditProfile extends BaseActivity implements IPickCancel, IPickResul
             if (resultCode == RESULT_OK) {
                 imgMember.setImageBitmap(result.getBitmap());
                 homeWorkFile = FileUtils.getFile(context, result.getUri());
-                compressedImageFile = new Compressor.Builder(this)
-                        .setMaxWidth(800)
-                        .setMaxHeight(640)
-                        .setQuality(100)
-                        .setCompressFormat(Bitmap.CompressFormat.WEBP)
-                        .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(
-                                Environment.DIRECTORY_PICTURES).getAbsolutePath())
-                        .build()
-                        .compressToFile(homeWorkFile);
+                // Remove the Compressor-related code here
+                // compressedImageFile = new Compressor.Builder(this)
+                //         .setMaxWidth(800)
+                //         .setMaxHeight(640)
+                //         .setQuality(100)
+                //         .setCompressFormat(Bitmap.CompressFormat.WEBP)
+                //         .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(
+                //                 Environment.DIRECTORY_PICTURES).getAbsolutePath())
+                //         .build()
+                //         .compressToFile(homeWorkFile);
+
+                // You can just use the original file, or do any other necessary processing here.
                 uploadProfilePic();
                 Log.e("ADDRESS File ", homeWorkFile.toString());
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
-//                        Exception error = result.getError();
+                // Handle any error that may occur
             }
         }
     }
+
+
+
+
+
 
     @Override
     public void onCancelClick() {

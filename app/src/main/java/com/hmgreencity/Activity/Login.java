@@ -71,17 +71,13 @@ public class Login extends BaseActivity {
         RequestLogin requestLogin = new RequestLogin();
         requestLogin.setLoginId(etUsername.getText().toString().trim());
         requestLogin.setPassword(etPassword.getText().toString().trim());
-
         LoggerUtil.logItem(requestLogin);
-
         Call<ResponseLogin> call = apiServices.getLogin(requestLogin);
         call.enqueue(new Callback<ResponseLogin>() {
             @Override
             public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
-
                 hideLoading();
                 if (response.body().getStatus().equalsIgnoreCase("0")) {
-
                     PreferencesManager.getInstance(context).setUserId(response.body().getUserId());
                     PreferencesManager.getInstance(context).setFull_Name(response.body().getFullName());
                     PreferencesManager.getInstance(context).setUserType(response.body().getUserType());
@@ -91,15 +87,14 @@ public class Login extends BaseActivity {
                     showMessage(response.body().getMessage());
                 } else showMessage(response.body().getMessage());
             }
-
             @Override
             public void onFailure(Call<ResponseLogin> call, Throwable t) {
                 hideLoading();
                 Toast.makeText(Login.this, t+"", Toast.LENGTH_SHORT).show();
             }
-
         });
     }
+
 
     @Override
     public void onBackPressed() {

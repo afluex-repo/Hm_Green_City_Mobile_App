@@ -33,6 +33,7 @@ import com.hmgreencity.model.response.lstKycDocuments;
 import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
+
 import java.io.File;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -401,7 +402,7 @@ public class KYCUpload extends BaseActivity {
             Picasso.with(context)
                     .load(new File(imagePath))
                     .placeholder(R.drawable.bg) // Placeholder image while loading
-                    .error(R.drawable.camera) // Image to display in case of loading error
+                    .error(R.drawable.ic_baseline_photo_camera_24) // Image to display in case of loading error
                     .into(imageView);
         } else {
             Toast.makeText(this, "Image path is empty", Toast.LENGTH_SHORT).show();

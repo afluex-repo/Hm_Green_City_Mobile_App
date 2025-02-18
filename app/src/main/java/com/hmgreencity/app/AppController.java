@@ -1,10 +1,6 @@
 package com.hmgreencity.app;
-
 import android.app.Application;
-
-import com.hmgreencity.R;
 import com.hmgreencity.common.ConnectivityReceiver;
-
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 
@@ -17,7 +13,7 @@ public class AppController extends Application {
         mInstance = this;
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/montserrat_medium.ttf")
-                .setFontAttrId(R.attr.fontPath)
+                .setFontAttrId(uk.co.chrisjenx.calligraphy.R.attr.fontPath)
                 .disableCustomViewInflation()
                 .build());
     }

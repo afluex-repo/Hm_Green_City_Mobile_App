@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.miteshpithadiya:SearchableSpinner:master@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/54ab278d2c57dcc3a4a7713386f5e908/transformed/jetified-SearchableSpinner-master/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/54ab278d2c57dcc3a4a7713386f5e908/transformed/jetified-SearchableSpinner-master/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/54ab278d2c57dcc3a4a7713386f5e908/transformed/jetified-SearchableSpinner-master/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b27cd7031175765e42c904eb3905093/transformed/jetified-SearchableSpinner-master/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b27cd7031175765e42c904eb3905093/transformed/jetified-SearchableSpinner-master/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b27cd7031175765e42c904eb3905093/transformed/jetified-SearchableSpinner-master/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.miteshpithadiya/SearchableSpinner/master/22bf547ec9ad2be26f459ff3107ce084be693b65/SearchableSpinner-master-javadoc.jar!/" />
